@@ -68,10 +68,10 @@ const ImageCarousel = () => {
 
   return (
     <div className="max-w-[800px] mx-auto mt-4">
+      <div>
+        <h1 className="text-white">hello world</h1>
+      </div>
       <Slider {...settings}>
-        <div>
-          <h1 className="text-white">hello world</h1>
-        </div>
         {imagesToShow.map((image, index) => (
           <div key={index} className="px-2">
             <div className="relative rounded-lg overflow-hidden h-[400px]">

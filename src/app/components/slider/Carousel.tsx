@@ -46,13 +46,11 @@ const ImageCarousel = () => {
     ],
   };
 
-  // Fallback images if API fails
   const fallbackImages = [
     { src: "/Frame 560.png", alt: "Fallback Image 1" },
     { src: "/Frame 561.png", alt: "Fallback Image 2" },
   ];
 
-  // Determine which images to use (without captions)
   const imagesToShow =
     data?.slice(0, 5).map((product) => ({
       src: product.image,

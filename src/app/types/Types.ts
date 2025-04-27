@@ -7,3 +7,15 @@ export type buttonProps = {
   variant?: "primary" | "secondary" | "tertiary" | "ghost" | "link";
   size?: "sm" | "md" | "lg" | "xl" | "2xl";
 };
+
+export type cardProps = {
+  title: string;
+  description: string;
+  image: string;
+  price: number;
+  discountPrice?: number;
+  rating?: number;
+  onClick?: () => void;
+  className?: string;
+  discount?: number;
+};

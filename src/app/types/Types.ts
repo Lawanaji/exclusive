@@ -19,3 +19,9 @@ export type cardProps = {
   className?: string;
   discount?: number;
 };
+
+export type HeaderProps = {
+  title: string;
+  className?: string;
+  children?: React.ReactNode;
+};
